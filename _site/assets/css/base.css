@@ -107,7 +107,7 @@ th {
 }
 
 .header-info-desc {
-  font-size: 0.9em;
+  font-size: .9em;
 }
 
 .header-main-nav {
@@ -238,10 +238,12 @@ th {
     width: 100%;
     max-width: 300px;
   }
+
   /* Posts list */
   .posts-list-pagination {
     margin: 10px 0 5px 0;
   }
+
   /* Footer */
   .footer-copyright .float-left, .footer-copyright .float-right {
     float: none;
@@ -252,21 +254,26 @@ th {
   .header-container {
     display: none;
   }
+
   /* Footer */
   .footer-container {
     display: none;
   }
+
   /* Post */
   .post-title {
     text-align: center;
   }
+
   .post-author {
     display: block;
     text-align: center;
   }
+
   .post-info {
     display: none;
   }
+
   /* Highlight */
   pre.highlight {
     overflow-x: hidden;
@@ -287,5 +294,3 @@ code.language-mermaid {
   display: block;
   text-align: center;
 }
-
-/*# sourceMappingURL=base.css.map */

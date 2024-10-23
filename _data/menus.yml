@@ -1,12 +1,12 @@
 - default: menu_index
-  url: ""
+  url:   ""
 
 - default: menu_category
-  url: "category"
+  url:   "category"
 
-- title: "github"
+- title: "Jekyll Paper"
   absoluteUrl: true
-  url: "https://github.com/YejinHwang909"
+  url: "https://github.com/ghosind/Jekyll-Paper"
 
 - default: menu_about
-  url: "about"
+  url:   "about"
