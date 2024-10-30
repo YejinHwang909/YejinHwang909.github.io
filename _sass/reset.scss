@@ -1,12 +1,22 @@
 @charset "utf-8";
 
+@font-face {
+  font-family: "YoonChildfundkoreaManSeh";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/YoonChildfundkoreaManSeh.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: Courier New, Courier, monospace;
+  font-family: Courier New, Courier, monospace, "YoonChildfundkoreaManSeh",
+    serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -25,7 +35,12 @@ blockquote {
   border-left: 2px solid #888;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: normal;
   margin: 5px 0;
   text-indent: 0;
@@ -44,7 +59,8 @@ img {
   max-width: 700px;
 }
 
-ol, ul {
+ol,
+ul {
   margin-left: 35px;
 }
 
@@ -56,7 +72,7 @@ table {
   width: 100%;
 }
 
-tbody tr:hover{
+tbody tr:hover {
   background-color: #f5f5f5;
 }
 
@@ -65,7 +81,7 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
-th {  
+th {
   padding: 8px;
   border-bottom: 1px solid #ccc;
   background: #f5f5f5;
