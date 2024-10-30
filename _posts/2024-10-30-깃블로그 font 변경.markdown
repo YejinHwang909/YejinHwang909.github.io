@@ -1,0 +1,61 @@
+---
+layout: post
+title: "깃블로그 한국어 font 변경"
+date: 2024-10-30
+last_modified_at: 2024-10-30
+categories: [etc]
+tags: [css]
+---
+
+<br>
+
+### 깃블로그 한국어 font 변경을 해보자 🌱
+
+<br>
+윈도우에서 보기에 못생긴 폰트가 거슬리기 때문에  폰트 먼저 바꾸기로 했다.
+<br>
+
+1. 먼저 눈누에서 마음에 드는 글씨체를 찾아보자 <br>
+
+- [눈누 링크](https://noonnu.cc/)<br><br>
+
+2. 코드를 수정하자 <br>
+   나의 경우에는 `_sass/reset.scss` 이 위치에 있었다. <br>인터넷에 찾아보니깐 보통 `_sass/main.scss`에 있던데 본인이 사용한 테마에 맞게 알아서 찾아보자.
+
+```css
+@font-face {
+  font-family: "YoonChildfundkoreaManSeh";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/YoonChildfundkoreaManSeh.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+```
+
+폰트를 가져온다. <br><br>
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Courier New, Courier, monospace, "YoonChildfundkoreaManSeh", serif;
+}
+```
+
+그리고 적용. <br>끝. <br><br>
+
+---
+
+🎾 추가로 [구글 폰트](https://fonts.google.com/)를 사용하고 싶은 경우 <br>
+
+```css
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Courier New, Courier, monospace, "Nanum Myeongjo", serif;
+}
+```
+
+`@import`로 가져오고 `font-family`에 추가하면 된다. 간단하다. <br><br>
